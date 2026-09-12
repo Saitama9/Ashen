@@ -1,0 +1,318 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #080B0D;
+  --bg-secondary: #0D1215;
+  --panel: #11171A;
+  --panel-light: #182024;
+
+  --border: #59452A;
+  --border-bright: #C99A3D;
+
+  --text: #E7D8B5;
+  --text-secondary: #A99D83;
+  --text-muted: #6F695C;
+
+  --gold: #D5A441;
+  --gold-bright: #F0C75E;
+
+  --ember: #B84025;
+  --ember-bright: #E0522D;
+
+  --red-dark: #68251B;
+
+  --blue: #4CA7D8;
+  --blue-bright: #72C7F0;
+
+  --green: #62A96B;
+  --green-bright: #7ACB83;
+
+  --purple: #8D70B8;
+
+  --strength: #D94B38;
+  --intelligence: #4CA7D8;
+  --vitality: #62A96B;
+  --focus: #D5A441;
+  --locked: #41474A;
+}
+
+body {
+  font-family: "Lora", serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: "Cinzel", serif;
+}
+
+.font-ornate {
+  font-family: "Cinzel Decorative", "Cinzel", serif;
+}
+
+.font-pixel {
+  font-family: "Press Start 2P", monospace;
+}
+
+.font-body {
+  font-family: "Lora", serif;
+}
+
+/* Pixel rendering guarantee */
+.pixel-art {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+/* Stepped 16-bit RPG Panel Border with modern smoothed borders */
+.pixel-box {
+  position: relative;
+  background: linear-gradient(180deg, #12181B 0%, #0C1012 100%);
+  border: 1px solid rgba(140, 111, 61, 0.35);
+  border-radius: 8px;
+  box-shadow: 
+    inset 0 1px 0 rgba(240, 199, 94, 0.1),
+    inset 0 0 16px rgba(0, 0, 0, 0.5),
+    0 8px 24px -4px rgba(0, 0, 0, 0.75);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pixel-box-gold {
+  position: relative;
+  background: linear-gradient(180deg, #172126 0%, #101619 100%);
+  border: 1px solid rgba(201, 154, 61, 0.6);
+  border-radius: 8px;
+  box-shadow: 
+    inset 0 1px 0 rgba(240, 199, 94, 0.25),
+    0 0 20px rgba(201, 154, 61, 0.12),
+    0 8px 28px -4px rgba(0, 0, 0, 0.85);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Authentic retro button press with smooth tactile feedback */
+.pixel-btn-tactile {
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.15s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.15s ease;
+}
+
+.pixel-btn-tactile:hover {
+  transform: translateY(-1px);
+}
+
+.pixel-btn-tactile:active {
+  transform: translateY(1px) scale(0.99);
+}
+
+/* Subtle dark stone texture with ambient blue fog and embers */
+.bg-ashen-realm {
+  background-color: #080B0D;
+  background-image: 
+    radial-gradient(ellipse at 50% 0%, rgba(30, 48, 64, 0.25) 0%, transparent 65%),
+    radial-gradient(circle at 85% 30%, rgba(184, 64, 37, 0.09) 0%, transparent 45%),
+    radial-gradient(circle at 15% 70%, rgba(201, 154, 61, 0.06) 0%, transparent 55%),
+    linear-gradient(rgba(8, 11, 13, 0.94), rgba(8, 11, 13, 0.98));
+}
+
+/* Card panel base style with smooth rounded borders */
+.rpg-panel {
+  background: linear-gradient(180deg, rgba(17, 23, 26, 0.96) 0%, rgba(12, 16, 19, 0.98) 100%);
+  border: 1px solid rgba(140, 111, 61, 0.3);
+  border-radius: 8px;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 8px 24px -4px rgba(0, 0, 0, 0.7);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rpg-panel-highlight {
+  border: 1px solid rgba(201, 154, 61, 0.7);
+  border-radius: 8px;
+  box-shadow: 
+    0 0 0 1px rgba(201, 154, 61, 0.25), 
+    0 8px 28px -4px rgba(0, 0, 0, 0.8), 
+    0 0 24px rgba(201, 154, 61, 0.15);
+}
+
+/* Gilded hairline border utility */
+.gilded-border {
+  border: 1px solid rgba(201, 154, 61, 0.4);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(240, 199, 94, 0.15);
+}
+
+.gilded-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(201, 154, 61, 0.4) 50%, transparent 100%);
+}
+
+/* Custom smooth scrollbars for dark fantasy */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080B0D;
+}
+::-webkit-scrollbar-thumb {
+  background: #2D2214;
+  border-radius: 9999px;
+  border: 1px solid rgba(140, 111, 61, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C99A3D;
+}
+
+/* Bonfire Organic Animations */
+@keyframes bonfireFlicker {
+  0%, 100% {
+    transform: scaleY(1) scaleX(1) skewX(0deg);
+    filter: drop-shadow(0 0 12px rgba(240, 199, 94, 0.7));
+  }
+  25% {
+    transform: scaleY(1.06) scaleX(0.97) skewX(1deg);
+    filter: drop-shadow(0 0 16px rgba(224, 82, 45, 0.8));
+  }
+  50% {
+    transform: scaleY(0.96) scaleX(1.03) skewX(-1.5deg);
+    filter: drop-shadow(0 0 10px rgba(240, 199, 94, 0.6));
+  }
+  75% {
+    transform: scaleY(1.08) scaleX(0.95) skewX(1.2deg);
+    filter: drop-shadow(0 0 18px rgba(245, 158, 11, 0.85));
+  }
+}
+
+@keyframes innerFlameDance {
+  0%, 100% {
+    transform: scaleY(1) translateY(0) scaleX(1);
+    opacity: 0.95;
+  }
+  30% {
+    transform: scaleY(1.12) translateY(-2px) scaleX(0.94);
+    opacity: 1;
+  }
+  70% {
+    transform: scaleY(0.92) translateY(1px) scaleX(1.05);
+    opacity: 0.9;
+  }
+}
+
+@keyframes bonfireGlowPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+
+@keyframes emberRise1 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-6px, -45px) scale(0.9);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate(-12px, -95px) scale(0.4);
+    opacity: 0;
+  }
+}
+
+@keyframes emberRise2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  40% {
+    transform: translate(8px, -40px) scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(14px, -85px) scale(0.3);
+    opacity: 0;
+  }
+}
+
+@keyframes emberRise3 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(-4px, -60px) scale(0.8);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-2px, -110px) scale(0.2);
+    opacity: 0;
+  }
+}
+
+@keyframes coalGlow {
+  0%, 100% {
+    opacity: 0.75;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 1;
+    filter: brightness(1.35);
+  }
+}
+
+@keyframes bonfireLitBanner {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -15px) scale(0.9);
+    filter: blur(4px);
+  }
+  15% {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+    filter: blur(0px);
+  }
+  80% {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 10px) scale(0.95);
+    filter: blur(2px);
+  }
+}
+
+/* Ornate retro corner accents */
+.ornate-corners {
+  position: relative;
+}
+.ornate-corners::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid var(--border-bright);
+  border-left: 2px solid var(--border-bright);
+  pointer-events: none;
+}
+.ornate-corners::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 6px;
+  height: 6px;
+  border-bottom: 2px solid var(--border-bright);
+  border-right: 2px solid var(--border-bright);
+  pointer-events: none;
+}

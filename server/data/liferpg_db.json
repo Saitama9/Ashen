@@ -1,0 +1,1806 @@
+{
+  "users": [
+    {
+      "id": "usr_ashen_hero_01",
+      "email": "ashen.one@firelink.realm",
+      "username": "AshenOne",
+      "passwordHash": "$2a$10$w8TKn6/k5uN7pEa.hH9jZ.WbV1M.x0Xl64N9xP5o4i/PzX8R4rIqO",
+      "createdAt": "2026-09-12T11:34:25.267Z",
+      "updatedAt": "2026-09-12T11:34:25.267Z"
+    },
+    {
+      "id": "usr_1789222857130_bmbsg",
+      "email": "kumarabhijit936@gmail.com",
+      "username": "Abhijit",
+      "passwordHash": "$2b$10$RjZW5ElxN0fW8p8fPemo3u1zR8j/N1xBAwP0g3mppKpyNQIr3s9/G",
+      "createdAt": "2026-09-12T14:20:57.131Z",
+      "updatedAt": "2026-09-12T14:20:57.131Z"
+    },
+    {
+      "id": "usr_1789223111910_e9fzy",
+      "email": "user_a_1789223111813@ashen.test",
+      "username": "HeroA_1789223111813",
+      "passwordHash": "$2b$10$oQmr5LuidriKll89fMDaB.BfO43jNOpyXhWpz/1mA1Q.rJOB0RVTK",
+      "createdAt": "2026-09-12T14:25:11.910Z",
+      "updatedAt": "2026-09-12T14:25:11.910Z"
+    },
+    {
+      "id": "usr_1789223112180_jijsu",
+      "email": "user_b_1789223112105@ashen.test",
+      "username": "HeroB_1789223112105",
+      "passwordHash": "$2b$10$tH9UCPlfdCScepVAaLaM6.5YMYftJXJFj85Zl0JBqeNCtc25O7abS",
+      "createdAt": "2026-09-12T14:25:12.180Z",
+      "updatedAt": "2026-09-12T14:25:12.180Z"
+    },
+    {
+      "id": "usr_1789223124110_npgj5",
+      "email": "user_a_1789223124027@ashen.test",
+      "username": "HeroA_1789223124027",
+      "passwordHash": "$2b$10$2nQRgkR3ej1pDBYZklzriuK.oYNtK0MXfSvd5nwQ/.NHa7O5akio2",
+      "createdAt": "2026-09-12T14:25:24.110Z",
+      "updatedAt": "2026-09-12T14:25:24.110Z"
+    },
+    {
+      "id": "usr_1789223124402_3l5ul",
+      "email": "user_b_1789223124325@ashen.test",
+      "username": "HeroB_1789223124325",
+      "passwordHash": "$2b$10$8sjDLrUphbVxglb1kxAnEeuAE8yE35i6PiJF6XiBdnZTWAL/5y7Ya",
+      "createdAt": "2026-09-12T14:25:24.402Z",
+      "updatedAt": "2026-09-12T14:25:24.402Z"
+    },
+    {
+      "id": "usr_1789223134467_jbyv2",
+      "email": "user_a_1789223134375@ashen.test",
+      "username": "HeroA_1789223134375",
+      "passwordHash": "$2b$10$bkFY0gKx5I2aQGhWspq2yuwvh9EMQkrkN6qXqPogEEf13uXQvpLla",
+      "createdAt": "2026-09-12T14:25:34.467Z",
+      "updatedAt": "2026-09-12T14:25:34.467Z"
+    },
+    {
+      "id": "usr_1789223134723_dv0ho",
+      "email": "user_b_1789223134653@ashen.test",
+      "username": "HeroB_1789223134653",
+      "passwordHash": "$2b$10$t16pPL.yNCrCbd9HfJSpCeEOv/fhhvZWJJtS3GZreTCErBhLqOsoa",
+      "createdAt": "2026-09-12T14:25:34.723Z",
+      "updatedAt": "2026-09-12T14:25:34.723Z"
+    },
+    {
+      "id": "usr_1789223179940_jwy0m",
+      "email": "user_a_1789223179836@ashen.test",
+      "username": "HeroA_1789223179836",
+      "passwordHash": "$2b$10$lb9Hr0zwwid0CIg0lqZQUOUXF8FnvD4D.VFPCNkdQmHjE7sz5SY52",
+      "createdAt": "2026-09-12T14:26:19.940Z",
+      "updatedAt": "2026-09-12T14:26:19.940Z"
+    },
+    {
+      "id": "usr_1789223180207_h4suf",
+      "email": "user_b_1789223180136@ashen.test",
+      "username": "HeroB_1789223180136",
+      "passwordHash": "$2b$10$I7Bs.8zF/s5H3CWB5dYOdeVALxijlFAaeJQHUFRqTFGw6b6zaTfN.",
+      "createdAt": "2026-09-12T14:26:20.207Z",
+      "updatedAt": "2026-09-12T14:26:20.207Z"
+    }
+  ],
+  "characters": [
+    {
+      "userId": "usr_ashen_hero_01",
+      "playerClass": "sorcerer",
+      "level": 4,
+      "xp": 260,
+      "maxXp": 716,
+      "gold": 0,
+      "streakDays": 7,
+      "lastActiveDate": "2026-09-12",
+      "stats": {
+        "strength": 17,
+        "intelligence": 29,
+        "vitality": 20,
+        "focus": 24
+      },
+      "unlockedClasses": [
+        "sorcerer",
+        "knight",
+        "rogue"
+      ],
+      "equippedItemIds": [
+        "firelink-lantern"
+      ],
+      "kindleLevel": 3,
+      "ownedItemIds": [
+        "item-1",
+        "firelink-lantern"
+      ]
+    },
+    {
+      "userId": "usr_1789222857130_bmbsg",
+      "playerClass": "knight",
+      "level": 1,
+      "xp": 0,
+      "maxXp": 100,
+      "gold": 150,
+      "streakDays": 1,
+      "lastActiveDate": "2026-09-12",
+      "stats": {
+        "strength": 10,
+        "intelligence": 12,
+        "vitality": 10,
+        "focus": 10
+      },
+      "unlockedClasses": [
+        "knight"
+      ],
+      "equippedItemIds": [],
+      "kindleLevel": 1
+    },
+    {
+      "userId": "usr_1789223111910_e9fzy",
+      "playerClass": "ronin",
+      "level": 2,
+      "xp": 200,
+      "maxXp": 267,
+      "gold": 50,
+      "streakDays": 1,
+      "lastActiveDate": "2026-09-12",
+      "stats": {
+        "strength": 17,
+        "intelligence": 10,
+        "vitality": 16,
+        "focus": 10
+      },
+      "unlockedClasses": [
+        "knight",
+        "ronin"
+      ],
+      "ownedItemIds": [
+        "item-1"
+      ],
+      "equippedItemIds": [
+        "item-1"
+      ],
+      "kindleLevel": 1
+    },
+    {
+      "userId": "usr_1789223112180_jijsu",
+      "playerClass": "rogue",
+      "level": 1,
+      "xp": 0,
+      "maxXp": 100,
+      "gold": 150,
+      "streakDays": 1,
+      "lastActiveDate": "2026-09-12",
+      "stats": {
+        "strength": 10,
+        "intelligence": 11,
+        "vitality": 10,
+        "focus": 13
+      },
+      "unlockedClasses": [
+        "rogue"
+      ],
+      "ownedItemIds": [
+        "item-1"
+      ],
+      "equippedItemIds": [
+        "item-1"
+      ],
+      "kindleLevel": 1
+    },
+    {
+      "userId": "usr_1789223124110_npgj5",
+      "playerClass": "ronin",
+      "level": 3,
+      "xp": 33,
+      "maxXp": 475,
+      "gold": 550,
+      "streakDays": 1,
+      "lastActiveDate": "2026-09-12",
+      "stats": {
+        "strength": 19,
+        "intelligence": 12,
+        "vitality": 18,
+        "focus": 13
+      },
+      "unlockedClasses": [
+        "knight",
+        "ronin"
+      ],
+      "ownedItemIds": [
+        "item-1"
+      ],
+      "equippedItemIds": [
+        "item-1"
+      ],
+      "kindleLevel": 1
+    },
+    {
+      "userId": "usr_1789223124402_3l5ul",
+      "playerClass": "rogue",
+      "level": 1,
+      "xp": 0,
+      "maxXp": 100,
+      "gold": 150,
+      "streakDays": 1,
+      "lastActiveDate": "2026-09-12",
+      "stats": {
+        "strength": 10,
+        "intelligence": 11,
+        "vitality": 10,
+        "focus": 13
+      },
+      "unlockedClasses": [
+        "rogue"
+      ],
+      "ownedItemIds": [
+        "item-1"
+      ],
+      "equippedItemIds": [
+        "item-1"
+      ],
+      "kindleLevel": 1
+    },
+    {
+      "userId": "usr_1789223134467_jbyv2",
+      "playerClass": "ronin",
+      "level": 3,
+      "xp": 33,
+      "maxXp": 475,
+      "gold": 550,
+      "streakDays": 1,
+      "lastActiveDate": "2026-09-12",
+      "stats": {
+        "strength": 19,
+        "intelligence": 12,
+        "vitality": 18,
+        "focus": 13
+      },
+      "unlockedClasses": [
+        "knight",
+        "ronin"
+      ],
+      "ownedItemIds": [
+        "item-1"
+      ],
+      "equippedItemIds": [
+        "item-1"
+      ],
+      "kindleLevel": 1
+    },
+    {
+      "userId": "usr_1789223134723_dv0ho",
+      "playerClass": "rogue",
+      "level": 1,
+      "xp": 0,
+      "maxXp": 100,
+      "gold": 150,
+      "streakDays": 1,
+      "lastActiveDate": "2026-09-12",
+      "stats": {
+        "strength": 10,
+        "intelligence": 11,
+        "vitality": 10,
+        "focus": 13
+      },
+      "unlockedClasses": [
+        "rogue"
+      ],
+      "ownedItemIds": [
+        "item-1"
+      ],
+      "equippedItemIds": [
+        "item-1"
+      ],
+      "kindleLevel": 1
+    },
+    {
+      "userId": "usr_1789223179940_jwy0m",
+      "playerClass": "ronin",
+      "level": 3,
+      "xp": 33,
+      "maxXp": 475,
+      "gold": 350,
+      "streakDays": 1,
+      "lastActiveDate": "2026-09-12",
+      "stats": {
+        "strength": 23,
+        "intelligence": 12,
+        "vitality": 18,
+        "focus": 13
+      },
+      "unlockedClasses": [
+        "knight",
+        "ronin"
+      ],
+      "ownedItemIds": [
+        "item-1",
+        "item-2"
+      ],
+      "equippedItemIds": [
+        "item-1",
+        "item-2"
+      ],
+      "kindleLevel": 1
+    },
+    {
+      "userId": "usr_1789223180207_h4suf",
+      "playerClass": "rogue",
+      "level": 1,
+      "xp": 0,
+      "maxXp": 100,
+      "gold": 150,
+      "streakDays": 1,
+      "lastActiveDate": "2026-09-12",
+      "stats": {
+        "strength": 10,
+        "intelligence": 11,
+        "vitality": 10,
+        "focus": 13
+      },
+      "unlockedClasses": [
+        "rogue"
+      ],
+      "ownedItemIds": [
+        "item-1"
+      ],
+      "equippedItemIds": [
+        "item-1"
+      ],
+      "kindleLevel": 1
+    }
+  ],
+  "quests": [
+    {
+      "id": "qst_1789223180300_fjjt",
+      "userId": "usr_1789223179940_jwy0m",
+      "title": "User A's Blacksmith Quest",
+      "description": "",
+      "category": "work",
+      "difficulty": "epic",
+      "xpReward": 100,
+      "goldReward": 500,
+      "attributeTarget": "focus",
+      "statType": "focus",
+      "statAmount": 10,
+      "repeat": "daily",
+      "completed": true,
+      "streak": 1,
+      "tags": [],
+      "createdAt": "2026-09-12T14:26:20.300Z",
+      "updatedAt": "2026-09-12T14:26:20.315Z",
+      "completedAt": "2026-09-12T14:26:20.315Z"
+    },
+    {
+      "id": "qst_1789223180226_qyy0",
+      "userId": "usr_1789223179940_jwy0m",
+      "title": "User A's Secret Quest",
+      "description": "",
+      "category": "fitness",
+      "difficulty": "hard",
+      "xpReward": 300,
+      "goldReward": 500,
+      "attributeTarget": "strength",
+      "statType": "strength",
+      "statAmount": 10,
+      "repeat": "daily",
+      "completed": true,
+      "streak": 1,
+      "tags": [],
+      "createdAt": "2026-09-12T14:26:20.226Z",
+      "updatedAt": "2026-09-12T14:26:20.256Z",
+      "completedAt": "2026-09-12T14:26:20.255Z"
+    },
+    {
+      "id": "qst_1789223134819_w479",
+      "userId": "usr_1789223134467_jbyv2",
+      "title": "User A's Blacksmith Quest",
+      "description": "",
+      "category": "work",
+      "difficulty": "epic",
+      "xpReward": 100,
+      "goldReward": 500,
+      "attributeTarget": "focus",
+      "statType": "focus",
+      "statAmount": 10,
+      "repeat": "daily",
+      "completed": true,
+      "streak": 1,
+      "tags": [],
+      "createdAt": "2026-09-12T14:25:34.820Z",
+      "updatedAt": "2026-09-12T14:25:34.833Z",
+      "completedAt": "2026-09-12T14:25:34.833Z"
+    },
+    {
+      "id": "qst_1789223134733_6lfh",
+      "userId": "usr_1789223134467_jbyv2",
+      "title": "User A's Secret Quest",
+      "description": "",
+      "category": "fitness",
+      "difficulty": "hard",
+      "xpReward": 300,
+      "goldReward": 500,
+      "attributeTarget": "strength",
+      "statType": "strength",
+      "statAmount": 10,
+      "repeat": "daily",
+      "completed": true,
+      "streak": 1,
+      "tags": [],
+      "createdAt": "2026-09-12T14:25:34.733Z",
+      "updatedAt": "2026-09-12T14:25:34.770Z",
+      "completedAt": "2026-09-12T14:25:34.770Z"
+    },
+    {
+      "id": "qst_1789223124498_81sn",
+      "userId": "usr_1789223124110_npgj5",
+      "title": "User A's Blacksmith Quest",
+      "description": "",
+      "category": "work",
+      "difficulty": "epic",
+      "xpReward": 100,
+      "goldReward": 500,
+      "attributeTarget": "focus",
+      "statType": "focus",
+      "statAmount": 10,
+      "repeat": "daily",
+      "completed": true,
+      "streak": 1,
+      "tags": [],
+      "createdAt": "2026-09-12T14:25:24.498Z",
+      "updatedAt": "2026-09-12T14:25:24.511Z",
+      "completedAt": "2026-09-12T14:25:24.511Z"
+    },
+    {
+      "id": "qst_1789223124412_nqbd",
+      "userId": "usr_1789223124110_npgj5",
+      "title": "User A's Secret Quest",
+      "description": "",
+      "category": "fitness",
+      "difficulty": "hard",
+      "xpReward": 300,
+      "goldReward": 500,
+      "attributeTarget": "strength",
+      "statType": "strength",
+      "statAmount": 10,
+      "repeat": "daily",
+      "completed": true,
+      "streak": 1,
+      "tags": [],
+      "createdAt": "2026-09-12T14:25:24.412Z",
+      "updatedAt": "2026-09-12T14:25:24.452Z",
+      "completedAt": "2026-09-12T14:25:24.451Z"
+    },
+    {
+      "id": "qst_1789223112197_knlw",
+      "userId": "usr_1789223111910_e9fzy",
+      "title": "User A's Secret Quest",
+      "description": "",
+      "category": "fitness",
+      "difficulty": "hard",
+      "xpReward": 300,
+      "goldReward": 500,
+      "attributeTarget": "strength",
+      "statType": "strength",
+      "statAmount": 10,
+      "repeat": "daily",
+      "completed": true,
+      "streak": 1,
+      "tags": [],
+      "createdAt": "2026-09-12T14:25:12.197Z",
+      "updatedAt": "2026-09-12T14:25:12.233Z",
+      "completedAt": "2026-09-12T14:25:12.232Z"
+    },
+    {
+      "id": "qst_1789222587529_mgel",
+      "userId": "usr_ashen_hero_01",
+      "title": "dfdf",
+      "description": "",
+      "category": "work",
+      "difficulty": "medium",
+      "xpReward": 50,
+      "goldReward": 45,
+      "attributeTarget": "strength",
+      "statType": "strength",
+      "statAmount": 10,
+      "repeat": "weekly",
+      "completed": false,
+      "streak": 2,
+      "tags": [],
+      "createdAt": "2026-09-12T14:16:27.529Z",
+      "updatedAt": "2026-09-12T14:19:15.905Z"
+    },
+    {
+      "id": "qst_1789221476863_3qcx",
+      "userId": "usr_ashen_hero_01",
+      "title": "sleep",
+      "description": "yes sir",
+      "category": "study",
+      "difficulty": "medium",
+      "xpReward": 50,
+      "goldReward": 45,
+      "attributeTarget": "intelligence",
+      "statType": "intelligence",
+      "statAmount": 10,
+      "repeat": "daily",
+      "completed": false,
+      "streak": 1,
+      "tags": [],
+      "createdAt": "2026-09-12T13:57:56.863Z",
+      "updatedAt": "2026-09-12T14:19:14.706Z"
+    },
+    {
+      "id": "quest-gym",
+      "userId": "usr_ashen_hero_01",
+      "title": "Defeat the Iron Sloth (Gym & Strength Training)",
+      "description": "Conquer the weights and forge bodily fortitude for 45 minutes.",
+      "category": "fitness",
+      "difficulty": "medium",
+      "xpReward": 65,
+      "goldReward": 50,
+      "attributeTarget": "strength",
+      "completed": false,
+      "streak": 4,
+      "tags": [
+        "fitness",
+        "strength",
+        "health"
+      ],
+      "createdAt": "2026-09-12T11:34:25.267Z",
+      "updatedAt": "2026-09-12T14:19:11.622Z"
+    },
+    {
+      "id": "quest-reading",
+      "userId": "usr_ashen_hero_01",
+      "title": "Study the Ancient Tomes (Read 25 Pages)",
+      "description": "Absorb profound thoughts from literature or technical lore.",
+      "category": "study",
+      "difficulty": "easy",
+      "xpReward": 40,
+      "goldReward": 30,
+      "attributeTarget": "intelligence",
+      "completed": false,
+      "streak": 5,
+      "tags": [
+        "study",
+        "mind",
+        "reading"
+      ],
+      "createdAt": "2026-09-12T11:34:25.267Z",
+      "updatedAt": "2026-09-12T14:19:12.843Z"
+    },
+    {
+      "id": "quest-deepwork",
+      "userId": "usr_ashen_hero_01",
+      "title": "Channel Unbroken Focus (Deep Work Sprint)",
+      "description": "Complete 90 minutes of high-intensity focus without distractions.",
+      "category": "work",
+      "difficulty": "hard",
+      "xpReward": 120,
+      "goldReward": 90,
+      "attributeTarget": "focus",
+      "completed": false,
+      "streak": 4,
+      "tags": [
+        "career",
+        "focus",
+        "deepwork"
+      ],
+      "createdAt": "2026-09-12T11:34:25.267Z",
+      "updatedAt": "2026-09-12T14:19:09.723Z"
+    },
+    {
+      "id": "quest-hydration",
+      "userId": "usr_ashen_hero_01",
+      "title": "Drink from the Fountain of Life (2.5L Water)",
+      "description": "Nourish the biological vessel with crisp hydration.",
+      "category": "health",
+      "difficulty": "trivial",
+      "xpReward": 20,
+      "goldReward": 15,
+      "attributeTarget": "vitality",
+      "completed": false,
+      "streak": 7,
+      "tags": [
+        "health",
+        "vitality",
+        "wellness"
+      ],
+      "createdAt": "2026-09-12T11:34:25.267Z",
+      "updatedAt": "2026-09-12T14:10:41.378Z"
+    },
+    {
+      "id": "quest-gym",
+      "userId": "usr_1789223111910_e9fzy",
+      "title": "Defeat the Iron Sloth (Gym & Strength Training)",
+      "description": "Conquer the weights and forge bodily fortitude for 45 minutes.",
+      "category": "fitness",
+      "difficulty": "medium",
+      "xpReward": 65,
+      "goldReward": 50,
+      "attributeTarget": "strength",
+      "statType": "strength",
+      "statAmount": 15,
+      "repeat": "daily",
+      "completed": false,
+      "streak": 3,
+      "tags": [
+        "fitness",
+        "strength",
+        "health"
+      ],
+      "createdAt": "2026-09-12T14:25:11.913Z",
+      "updatedAt": "2026-09-12T14:25:11.913Z"
+    },
+    {
+      "id": "quest-reading",
+      "userId": "usr_1789223111910_e9fzy",
+      "title": "Study the Ancient Tomes (Read 25 Pages)",
+      "description": "Absorb profound thoughts from literature or technical lore.",
+      "category": "study",
+      "difficulty": "easy",
+      "xpReward": 40,
+      "goldReward": 30,
+      "attributeTarget": "intelligence",
+      "statType": "intelligence",
+      "statAmount": 10,
+      "repeat": "daily",
+      "completed": true,
+      "completedAt": "2026-09-12T14:25:11.913Z",
+      "streak": 5,
+      "tags": [
+        "study",
+        "mind",
+        "reading"
+      ],
+      "createdAt": "2026-09-12T14:25:11.913Z",
+      "updatedAt": "2026-09-12T14:25:11.913Z"
+    },
+    {
+      "id": "quest-deepwork",
+      "userId": "usr_1789223111910_e9fzy",
+      "title": "Channel Unbroken Focus (Deep Work Sprint)",
+      "description": "Complete 90 minutes of high-intensity focus without distractions.",
+      "category": "work",
+      "difficulty": "hard",
+      "xpReward": 120,
+      "goldReward": 90,
+      "attributeTarget": "focus",
+      "statType": "focus",
+      "statAmount": 20,
+      "repeat": "daily",
+      "completed": false,
+      "streak": 2,
+      "tags": [
+        "career",
+        "focus",
+        "deepwork"
+      ],
+      "createdAt": "2026-09-12T14:25:11.913Z",
+      "updatedAt": "2026-09-12T14:25:11.913Z"
+    },
+    {
+      "id": "quest-hydration",
+      "userId": "usr_1789223111910_e9fzy",
+      "title": "Drink from the Fountain of Life (2.5L Water)",
+      "description": "Nourish the biological vessel with crisp hydration.",
+      "category": "health",
+      "difficulty": "trivial",
+      "xpReward": 20,
+      "goldReward": 15,
+      "attributeTarget": "vitality",
+      "statType": "vitality",
+      "statAmount": 8,
+      "repeat": "daily",
+      "completed": true,
+      "completedAt": "2026-09-12T14:25:11.913Z",
+      "streak": 7,
+      "tags": [
+        "health",
+        "vitality",
+        "wellness"
+      ],
+      "createdAt": "2026-09-12T14:25:11.913Z",
+      "updatedAt": "2026-09-12T14:25:11.913Z"
+    },
+    {
+      "id": "quest-gym",
+      "userId": "usr_1789223112180_jijsu",
+      "title": "Defeat the Iron Sloth (Gym & Strength Training)",
+      "description": "Conquer the weights and forge bodily fortitude for 45 minutes.",
+      "category": "fitness",
+      "difficulty": "medium",
+      "xpReward": 65,
+      "goldReward": 50,
+      "attributeTarget": "strength",
+      "statType": "strength",
+      "statAmount": 15,
+      "repeat": "daily",
+      "completed": false,
+      "streak": 3,
+      "tags": [
+        "fitness",
+        "strength",
+        "health"
+      ],
+      "createdAt": "2026-09-12T14:25:12.184Z",
+      "updatedAt": "2026-09-12T14:25:12.184Z"
+    },
+    {
+      "id": "quest-reading",
+      "userId": "usr_1789223112180_jijsu",
+      "title": "Study the Ancient Tomes (Read 25 Pages)",
+      "description": "Absorb profound thoughts from literature or technical lore.",
+      "category": "study",
+      "difficulty": "easy",
+      "xpReward": 40,
+      "goldReward": 30,
+      "attributeTarget": "intelligence",
+      "statType": "intelligence",
+      "statAmount": 10,
+      "repeat": "daily",
+      "completed": true,
+      "completedAt": "2026-09-12T14:25:12.184Z",
+      "streak": 5,
+      "tags": [
+        "study",
+        "mind",
+        "reading"
+      ],
+      "createdAt": "2026-09-12T14:25:12.184Z",
+      "updatedAt": "2026-09-12T14:25:12.184Z"
+    },
+    {
+      "id": "quest-deepwork",
+      "userId": "usr_1789223112180_jijsu",
+      "title": "Channel Unbroken Focus (Deep Work Sprint)",
+      "description": "Complete 90 minutes of high-intensity focus without distractions.",
+      "category": "work",
+      "difficulty": "hard",
+      "xpReward": 120,
+      "goldReward": 90,
+      "attributeTarget": "focus",
+      "statType": "focus",
+      "statAmount": 20,
+      "repeat": "daily",
+      "completed": false,
+      "streak": 2,
+      "tags": [
+        "career",
+        "focus",
+        "deepwork"
+      ],
+      "createdAt": "2026-09-12T14:25:12.184Z",
+      "updatedAt": "2026-09-12T14:25:12.184Z"
+    },
+    {
+      "id": "quest-hydration",
+      "userId": "usr_1789223112180_jijsu",
+      "title": "Drink from the Fountain of Life (2.5L Water)",
+      "description": "Nourish the biological vessel with crisp hydration.",
+      "category": "health",
+      "difficulty": "trivial",
+      "xpReward": 20,
+      "goldReward": 15,
+      "attributeTarget": "vitality",
+      "statType": "vitality",
+      "statAmount": 8,
+      "repeat": "daily",
+      "completed": true,
+      "completedAt": "2026-09-12T14:25:12.184Z",
+      "streak": 7,
+      "tags": [
+        "health",
+        "vitality",
+        "wellness"
+      ],
+      "createdAt": "2026-09-12T14:25:12.184Z",
+      "updatedAt": "2026-09-12T14:25:12.184Z"
+    },
+    {
+      "id": "quest-gym",
+      "userId": "usr_1789223124110_npgj5",
+      "title": "Defeat the Iron Sloth (Gym & Strength Training)",
+      "description": "Conquer the weights and forge bodily fortitude for 45 minutes.",
+      "category": "fitness",
+      "difficulty": "medium",
+      "xpReward": 65,
+      "goldReward": 50,
+      "attributeTarget": "strength",
+      "statType": "strength",
+      "statAmount": 15,
+      "repeat": "daily",
+      "completed": false,
+      "streak": 3,
+      "tags": [
+        "fitness",
+        "strength",
+        "health"
+      ],
+      "createdAt": "2026-09-12T14:25:24.115Z",
+      "updatedAt": "2026-09-12T14:25:24.115Z"
+    },
+    {
+      "id": "quest-reading",
+      "userId": "usr_1789223124110_npgj5",
+      "title": "Study the Ancient Tomes (Read 25 Pages)",
+      "description": "Absorb profound thoughts from literature or technical lore.",
+      "category": "study",
+      "difficulty": "easy",
+      "xpReward": 40,
+      "goldReward": 30,
+      "attributeTarget": "intelligence",
+      "statType": "intelligence",
+      "statAmount": 10,
+      "repeat": "daily",
+      "completed": true,
+      "completedAt": "2026-09-12T14:25:24.115Z",
+      "streak": 5,
+      "tags": [
+        "study",
+        "mind",
+        "reading"
+      ],
+      "createdAt": "2026-09-12T14:25:24.115Z",
+      "updatedAt": "2026-09-12T14:25:24.115Z"
+    },
+    {
+      "id": "quest-deepwork",
+      "userId": "usr_1789223124110_npgj5",
+      "title": "Channel Unbroken Focus (Deep Work Sprint)",
+      "description": "Complete 90 minutes of high-intensity focus without distractions.",
+      "category": "work",
+      "difficulty": "hard",
+      "xpReward": 120,
+      "goldReward": 90,
+      "attributeTarget": "focus",
+      "statType": "focus",
+      "statAmount": 20,
+      "repeat": "daily",
+      "completed": false,
+      "streak": 2,
+      "tags": [
+        "career",
+        "focus",
+        "deepwork"
+      ],
+      "createdAt": "2026-09-12T14:25:24.115Z",
+      "updatedAt": "2026-09-12T14:25:24.115Z"
+    },
+    {
+      "id": "quest-hydration",
+      "userId": "usr_1789223124110_npgj5",
+      "title": "Drink from the Fountain of Life (2.5L Water)",
+      "description": "Nourish the biological vessel with crisp hydration.",
+      "category": "health",
+      "difficulty": "trivial",
+      "xpReward": 20,
+      "goldReward": 15,
+      "attributeTarget": "vitality",
+      "statType": "vitality",
+      "statAmount": 8,
+      "repeat": "daily",
+      "completed": true,
+      "completedAt": "2026-09-12T14:25:24.115Z",
+      "streak": 7,
+      "tags": [
+        "health",
+        "vitality",
+        "wellness"
+      ],
+      "createdAt": "2026-09-12T14:25:24.115Z",
+      "updatedAt": "2026-09-12T14:25:24.115Z"
+    },
+    {
+      "id": "quest-gym",
+      "userId": "usr_1789223124402_3l5ul",
+      "title": "Defeat the Iron Sloth (Gym & Strength Training)",
+      "description": "Conquer the weights and forge bodily fortitude for 45 minutes.",
+      "category": "fitness",
+      "difficulty": "medium",
+      "xpReward": 65,
+      "goldReward": 50,
+      "attributeTarget": "strength",
+      "statType": "strength",
+      "statAmount": 15,
+      "repeat": "daily",
+      "completed": false,
+      "streak": 3,
+      "tags": [
+        "fitness",
+        "strength",
+        "health"
+      ],
+      "createdAt": "2026-09-12T14:25:24.404Z",
+      "updatedAt": "2026-09-12T14:25:24.404Z"
+    },
+    {
+      "id": "quest-reading",
+      "userId": "usr_1789223124402_3l5ul",
+      "title": "Study the Ancient Tomes (Read 25 Pages)",
+      "description": "Absorb profound thoughts from literature or technical lore.",
+      "category": "study",
+      "difficulty": "easy",
+      "xpReward": 40,
+      "goldReward": 30,
+      "attributeTarget": "intelligence",
+      "statType": "intelligence",
+      "statAmount": 10,
+      "repeat": "daily",
+      "completed": true,
+      "completedAt": "2026-09-12T14:25:24.404Z",
+      "streak": 5,
+      "tags": [
+        "study",
+        "mind",
+        "reading"
+      ],
+      "createdAt": "2026-09-12T14:25:24.404Z",
+      "updatedAt": "2026-09-12T14:25:24.404Z"
+    },
+    {
+      "id": "quest-deepwork",
+      "userId": "usr_1789223124402_3l5ul",
+      "title": "Channel Unbroken Focus (Deep Work Sprint)",
+      "description": "Complete 90 minutes of high-intensity focus without distractions.",
+      "category": "work",
+      "difficulty": "hard",
+      "xpReward": 120,
+      "goldReward": 90,
+      "attributeTarget": "focus",
+      "statType": "focus",
+      "statAmount": 20,
+      "repeat": "daily",
+      "completed": false,
+      "streak": 2,
+      "tags": [
+        "career",
+        "focus",
+        "deepwork"
+      ],
+      "createdAt": "2026-09-12T14:25:24.404Z",
+      "updatedAt": "2026-09-12T14:25:24.404Z"
+    },
+    {
+      "id": "quest-hydration",
+      "userId": "usr_1789223124402_3l5ul",
+      "title": "Drink from the Fountain of Life (2.5L Water)",
+      "description": "Nourish the biological vessel with crisp hydration.",
+      "category": "health",
+      "difficulty": "trivial",
+      "xpReward": 20,
+      "goldReward": 15,
+      "attributeTarget": "vitality",
+      "statType": "vitality",
+      "statAmount": 8,
+      "repeat": "daily",
+      "completed": true,
+      "completedAt": "2026-09-12T14:25:24.404Z",
+      "streak": 7,
+      "tags": [
+        "health",
+        "vitality",
+        "wellness"
+      ],
+      "createdAt": "2026-09-12T14:25:24.404Z",
+      "updatedAt": "2026-09-12T14:25:24.404Z"
+    },
+    {
+      "id": "quest-gym",
+      "userId": "usr_1789223134467_jbyv2",
+      "title": "Defeat the Iron Sloth (Gym & Strength Training)",
+      "description": "Conquer the weights and forge bodily fortitude for 45 minutes.",
+      "category": "fitness",
+      "difficulty": "medium",
+      "xpReward": 65,
+      "goldReward": 50,
+      "attributeTarget": "strength",
+      "statType": "strength",
+      "statAmount": 15,
+      "repeat": "daily",
+      "completed": false,
+      "streak": 3,
+      "tags": [
+        "fitness",
+        "strength",
+        "health"
+      ],
+      "createdAt": "2026-09-12T14:25:34.469Z",
+      "updatedAt": "2026-09-12T14:25:34.469Z"
+    },
+    {
+      "id": "quest-reading",
+      "userId": "usr_1789223134467_jbyv2",
+      "title": "Study the Ancient Tomes (Read 25 Pages)",
+      "description": "Absorb profound thoughts from literature or technical lore.",
+      "category": "study",
+      "difficulty": "easy",
+      "xpReward": 40,
+      "goldReward": 30,
+      "attributeTarget": "intelligence",
+      "statType": "intelligence",
+      "statAmount": 10,
+      "repeat": "daily",
+      "completed": true,
+      "completedAt": "2026-09-12T14:25:34.469Z",
+      "streak": 5,
+      "tags": [
+        "study",
+        "mind",
+        "reading"
+      ],
+      "createdAt": "2026-09-12T14:25:34.469Z",
+      "updatedAt": "2026-09-12T14:25:34.469Z"
+    },
+    {
+      "id": "quest-deepwork",
+      "userId": "usr_1789223134467_jbyv2",
+      "title": "Channel Unbroken Focus (Deep Work Sprint)",
+      "description": "Complete 90 minutes of high-intensity focus without distractions.",
+      "category": "work",
+      "difficulty": "hard",
+      "xpReward": 120,
+      "goldReward": 90,
+      "attributeTarget": "focus",
+      "statType": "focus",
+      "statAmount": 20,
+      "repeat": "daily",
+      "completed": false,
+      "streak": 2,
+      "tags": [
+        "career",
+        "focus",
+        "deepwork"
+      ],
+      "createdAt": "2026-09-12T14:25:34.469Z",
+      "updatedAt": "2026-09-12T14:25:34.469Z"
+    },
+    {
+      "id": "quest-hydration",
+      "userId": "usr_1789223134467_jbyv2",
+      "title": "Drink from the Fountain of Life (2.5L Water)",
+      "description": "Nourish the biological vessel with crisp hydration.",
+      "category": "health",
+      "difficulty": "trivial",
+      "xpReward": 20,
+      "goldReward": 15,
+      "attributeTarget": "vitality",
+      "statType": "vitality",
+      "statAmount": 8,
+      "repeat": "daily",
+      "completed": true,
+      "completedAt": "2026-09-12T14:25:34.469Z",
+      "streak": 7,
+      "tags": [
+        "health",
+        "vitality",
+        "wellness"
+      ],
+      "createdAt": "2026-09-12T14:25:34.469Z",
+      "updatedAt": "2026-09-12T14:25:34.469Z"
+    },
+    {
+      "id": "quest-gym",
+      "userId": "usr_1789223134723_dv0ho",
+      "title": "Defeat the Iron Sloth (Gym & Strength Training)",
+      "description": "Conquer the weights and forge bodily fortitude for 45 minutes.",
+      "category": "fitness",
+      "difficulty": "medium",
+      "xpReward": 65,
+      "goldReward": 50,
+      "attributeTarget": "strength",
+      "statType": "strength",
+      "statAmount": 15,
+      "repeat": "daily",
+      "completed": false,
+      "streak": 3,
+      "tags": [
+        "fitness",
+        "strength",
+        "health"
+      ],
+      "createdAt": "2026-09-12T14:25:34.725Z",
+      "updatedAt": "2026-09-12T14:25:34.725Z"
+    },
+    {
+      "id": "quest-reading",
+      "userId": "usr_1789223134723_dv0ho",
+      "title": "Study the Ancient Tomes (Read 25 Pages)",
+      "description": "Absorb profound thoughts from literature or technical lore.",
+      "category": "study",
+      "difficulty": "easy",
+      "xpReward": 40,
+      "goldReward": 30,
+      "attributeTarget": "intelligence",
+      "statType": "intelligence",
+      "statAmount": 10,
+      "repeat": "daily",
+      "completed": true,
+      "completedAt": "2026-09-12T14:25:34.725Z",
+      "streak": 5,
+      "tags": [
+        "study",
+        "mind",
+        "reading"
+      ],
+      "createdAt": "2026-09-12T14:25:34.725Z",
+      "updatedAt": "2026-09-12T14:25:34.725Z"
+    },
+    {
+      "id": "quest-deepwork",
+      "userId": "usr_1789223134723_dv0ho",
+      "title": "Channel Unbroken Focus (Deep Work Sprint)",
+      "description": "Complete 90 minutes of high-intensity focus without distractions.",
+      "category": "work",
+      "difficulty": "hard",
+      "xpReward": 120,
+      "goldReward": 90,
+      "attributeTarget": "focus",
+      "statType": "focus",
+      "statAmount": 20,
+      "repeat": "daily",
+      "completed": false,
+      "streak": 2,
+      "tags": [
+        "career",
+        "focus",
+        "deepwork"
+      ],
+      "createdAt": "2026-09-12T14:25:34.725Z",
+      "updatedAt": "2026-09-12T14:25:34.725Z"
+    },
+    {
+      "id": "quest-hydration",
+      "userId": "usr_1789223134723_dv0ho",
+      "title": "Drink from the Fountain of Life (2.5L Water)",
+      "description": "Nourish the biological vessel with crisp hydration.",
+      "category": "health",
+      "difficulty": "trivial",
+      "xpReward": 20,
+      "goldReward": 15,
+      "attributeTarget": "vitality",
+      "statType": "vitality",
+      "statAmount": 8,
+      "repeat": "daily",
+      "completed": true,
+      "completedAt": "2026-09-12T14:25:34.725Z",
+      "streak": 7,
+      "tags": [
+        "health",
+        "vitality",
+        "wellness"
+      ],
+      "createdAt": "2026-09-12T14:25:34.725Z",
+      "updatedAt": "2026-09-12T14:25:34.725Z"
+    },
+    {
+      "id": "quest-gym",
+      "userId": "usr_1789223179940_jwy0m",
+      "title": "Defeat the Iron Sloth (Gym & Strength Training)",
+      "description": "Conquer the weights and forge bodily fortitude for 45 minutes.",
+      "category": "fitness",
+      "difficulty": "medium",
+      "xpReward": 65,
+      "goldReward": 50,
+      "attributeTarget": "strength",
+      "statType": "strength",
+      "statAmount": 15,
+      "repeat": "daily",
+      "completed": false,
+      "streak": 3,
+      "tags": [
+        "fitness",
+        "strength",
+        "health"
+      ],
+      "createdAt": "2026-09-12T14:26:19.944Z",
+      "updatedAt": "2026-09-12T14:26:19.944Z"
+    },
+    {
+      "id": "quest-reading",
+      "userId": "usr_1789223179940_jwy0m",
+      "title": "Study the Ancient Tomes (Read 25 Pages)",
+      "description": "Absorb profound thoughts from literature or technical lore.",
+      "category": "study",
+      "difficulty": "easy",
+      "xpReward": 40,
+      "goldReward": 30,
+      "attributeTarget": "intelligence",
+      "statType": "intelligence",
+      "statAmount": 10,
+      "repeat": "daily",
+      "completed": true,
+      "completedAt": "2026-09-12T14:26:19.944Z",
+      "streak": 5,
+      "tags": [
+        "study",
+        "mind",
+        "reading"
+      ],
+      "createdAt": "2026-09-12T14:26:19.944Z",
+      "updatedAt": "2026-09-12T14:26:19.944Z"
+    },
+    {
+      "id": "quest-deepwork",
+      "userId": "usr_1789223179940_jwy0m",
+      "title": "Channel Unbroken Focus (Deep Work Sprint)",
+      "description": "Complete 90 minutes of high-intensity focus without distractions.",
+      "category": "work",
+      "difficulty": "hard",
+      "xpReward": 120,
+      "goldReward": 90,
+      "attributeTarget": "focus",
+      "statType": "focus",
+      "statAmount": 20,
+      "repeat": "daily",
+      "completed": false,
+      "streak": 2,
+      "tags": [
+        "career",
+        "focus",
+        "deepwork"
+      ],
+      "createdAt": "2026-09-12T14:26:19.944Z",
+      "updatedAt": "2026-09-12T14:26:19.944Z"
+    },
+    {
+      "id": "quest-hydration",
+      "userId": "usr_1789223179940_jwy0m",
+      "title": "Drink from the Fountain of Life (2.5L Water)",
+      "description": "Nourish the biological vessel with crisp hydration.",
+      "category": "health",
+      "difficulty": "trivial",
+      "xpReward": 20,
+      "goldReward": 15,
+      "attributeTarget": "vitality",
+      "statType": "vitality",
+      "statAmount": 8,
+      "repeat": "daily",
+      "completed": true,
+      "completedAt": "2026-09-12T14:26:19.944Z",
+      "streak": 7,
+      "tags": [
+        "health",
+        "vitality",
+        "wellness"
+      ],
+      "createdAt": "2026-09-12T14:26:19.944Z",
+      "updatedAt": "2026-09-12T14:26:19.944Z"
+    },
+    {
+      "id": "quest-gym",
+      "userId": "usr_1789223180207_h4suf",
+      "title": "Defeat the Iron Sloth (Gym & Strength Training)",
+      "description": "Conquer the weights and forge bodily fortitude for 45 minutes.",
+      "category": "fitness",
+      "difficulty": "medium",
+      "xpReward": 65,
+      "goldReward": 50,
+      "attributeTarget": "strength",
+      "statType": "strength",
+      "statAmount": 15,
+      "repeat": "daily",
+      "completed": false,
+      "streak": 3,
+      "tags": [
+        "fitness",
+        "strength",
+        "health"
+      ],
+      "createdAt": "2026-09-12T14:26:20.211Z",
+      "updatedAt": "2026-09-12T14:26:20.211Z"
+    },
+    {
+      "id": "quest-reading",
+      "userId": "usr_1789223180207_h4suf",
+      "title": "Study the Ancient Tomes (Read 25 Pages)",
+      "description": "Absorb profound thoughts from literature or technical lore.",
+      "category": "study",
+      "difficulty": "easy",
+      "xpReward": 40,
+      "goldReward": 30,
+      "attributeTarget": "intelligence",
+      "statType": "intelligence",
+      "statAmount": 10,
+      "repeat": "daily",
+      "completed": true,
+      "completedAt": "2026-09-12T14:26:20.211Z",
+      "streak": 5,
+      "tags": [
+        "study",
+        "mind",
+        "reading"
+      ],
+      "createdAt": "2026-09-12T14:26:20.211Z",
+      "updatedAt": "2026-09-12T14:26:20.211Z"
+    },
+    {
+      "id": "quest-deepwork",
+      "userId": "usr_1789223180207_h4suf",
+      "title": "Channel Unbroken Focus (Deep Work Sprint)",
+      "description": "Complete 90 minutes of high-intensity focus without distractions.",
+      "category": "work",
+      "difficulty": "hard",
+      "xpReward": 120,
+      "goldReward": 90,
+      "attributeTarget": "focus",
+      "statType": "focus",
+      "statAmount": 20,
+      "repeat": "daily",
+      "completed": false,
+      "streak": 2,
+      "tags": [
+        "career",
+        "focus",
+        "deepwork"
+      ],
+      "createdAt": "2026-09-12T14:26:20.211Z",
+      "updatedAt": "2026-09-12T14:26:20.211Z"
+    },
+    {
+      "id": "quest-hydration",
+      "userId": "usr_1789223180207_h4suf",
+      "title": "Drink from the Fountain of Life (2.5L Water)",
+      "description": "Nourish the biological vessel with crisp hydration.",
+      "category": "health",
+      "difficulty": "trivial",
+      "xpReward": 20,
+      "goldReward": 15,
+      "attributeTarget": "vitality",
+      "statType": "vitality",
+      "statAmount": 8,
+      "repeat": "daily",
+      "completed": true,
+      "completedAt": "2026-09-12T14:26:20.211Z",
+      "streak": 7,
+      "tags": [
+        "health",
+        "vitality",
+        "wellness"
+      ],
+      "createdAt": "2026-09-12T14:26:20.211Z",
+      "updatedAt": "2026-09-12T14:26:20.211Z"
+    }
+  ],
+  "inventoryItems": [
+    {
+      "id": "iron-longsword",
+      "name": "Broadsword of Cinders",
+      "type": "weapon",
+      "iconType": "sword",
+      "description": "Forged in dragonfire. Increases Strength and critical discipline.",
+      "price": 150,
+      "statsBonus": {
+        "strength": 6,
+        "focus": 2
+      },
+      "equipped": false,
+      "owned": false
+    },
+    {
+      "id": "ashen-cloak",
+      "name": "Ashen Wanderer Robe",
+      "type": "armor",
+      "iconType": "shield",
+      "description": "Woven with threads of protection from ancient cathedrals.",
+      "price": 220,
+      "statsBonus": {
+        "vitality": 8,
+        "focus": 4
+      },
+      "equipped": false,
+      "owned": false
+    },
+    {
+      "id": "grimoire-void",
+      "name": "Grimoire of the Stygian Flame",
+      "type": "relic",
+      "iconType": "tome",
+      "description": "Contains forbidden arithmetic of deep knowledge and focus.",
+      "price": 350,
+      "statsBonus": {
+        "intelligence": 12,
+        "focus": 5
+      },
+      "equipped": false,
+      "owned": false
+    },
+    {
+      "id": "firelink-lantern",
+      "name": "Soul Lantern of Firelink",
+      "type": "accessory",
+      "iconType": "lantern",
+      "description": "Illuminates the path through darkness and enhances stamina.",
+      "price": 180,
+      "statsBonus": {
+        "vitality": 4,
+        "intelligence": 4
+      },
+      "equipped": true,
+      "owned": true
+    },
+    {
+      "id": "item-1",
+      "name": "Traveler's Cloak",
+      "type": "armor",
+      "iconType": "cloak",
+      "description": "Weathered hooded mantle woven from coarse thread. Protects against biting mountain winds.",
+      "price": 0,
+      "statBonus": {
+        "stat": "vitality",
+        "amount": 2
+      },
+      "statsBonus": {
+        "vitality": 2
+      },
+      "equipped": true,
+      "owned": true
+    },
+    {
+      "id": "item-2",
+      "name": "Iron Resolve",
+      "type": "armor",
+      "iconType": "armor",
+      "description": "Heavy plate forged in the northern kilns. Hardens the wearer against distraction.",
+      "price": 200,
+      "statBonus": {
+        "stat": "strength",
+        "amount": 4
+      },
+      "statsBonus": {
+        "strength": 4
+      },
+      "equipped": false,
+      "owned": false
+    },
+    {
+      "id": "item-3",
+      "name": "Scholar's Tome",
+      "type": "tome",
+      "iconType": "tome",
+      "description": "An illuminated codex containing lost axioms of the ancient archives.",
+      "price": 300,
+      "statBonus": {
+        "stat": "intelligence",
+        "amount": 5
+      },
+      "statsBonus": {
+        "intelligence": 5
+      },
+      "equipped": false,
+      "owned": false
+    },
+    {
+      "id": "item-4",
+      "name": "Ember Lantern",
+      "type": "relic",
+      "iconType": "lantern",
+      "description": "A cage of blackened brass bearing an undying cinder. Banishes shadows.",
+      "price": 500,
+      "statBonus": {
+        "stat": "focus",
+        "amount": 6
+      },
+      "statsBonus": {
+        "focus": 6
+      },
+      "equipped": false,
+      "owned": false
+    },
+    {
+      "id": "item-5",
+      "name": "Ashen Greatsword",
+      "type": "weapon",
+      "iconType": "sword",
+      "description": "Heavily chipped blade steeped in the residue of countless bonfires.",
+      "price": 800,
+      "statBonus": {
+        "stat": "strength",
+        "amount": 8
+      },
+      "statsBonus": {
+        "strength": 8
+      },
+      "equipped": false,
+      "owned": false
+    },
+    {
+      "id": "item-6",
+      "name": "Ring of Focus",
+      "type": "badge",
+      "iconType": "ring",
+      "description": "Engraved gold band that anchors erratic thoughts into deep discipline.",
+      "price": 400,
+      "statBonus": {
+        "stat": "focus",
+        "amount": 5
+      },
+      "statsBonus": {
+        "focus": 5
+      },
+      "equipped": false,
+      "owned": false
+    },
+    {
+      "id": "item-7",
+      "name": "Ancient Reliquary",
+      "type": "relic",
+      "iconType": "locked",
+      "description": "Sealed by ancient rite. Unlocks at Level 20.",
+      "price": 1500,
+      "equipped": false,
+      "owned": false
+    },
+    {
+      "id": "item-8",
+      "name": "Sunlight Talisman",
+      "type": "badge",
+      "iconType": "locked",
+      "description": "Sealed by ancient rite. Unlocks at Level 25.",
+      "price": 2000,
+      "equipped": false,
+      "owned": false
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "act_item_1789223180337",
+      "userId": "usr_1789223179940_jwy0m",
+      "type": "item_purchased",
+      "title": "Forged Artifact: Iron Resolve",
+      "detail": "Spent 200 Gold to acquire Iron Resolve.",
+      "timestamp": "2026-09-12T14:26:20.337Z",
+      "goldChange": -200
+    },
+    {
+      "id": "act_lvl_1789223180318",
+      "userId": "usr_1789223179940_jwy0m",
+      "type": "level_up",
+      "title": "Ascended to Level 3!",
+      "detail": "Attributes boosted across all disciplines.",
+      "timestamp": "2026-09-12T14:26:20.318Z"
+    },
+    {
+      "id": "act_1789223180316",
+      "userId": "usr_1789223179940_jwy0m",
+      "type": "quest_completed",
+      "title": "Quest Vanquished: User A's Blacksmith Quest",
+      "detail": "+100 XP, +500 Gold. Attribute increased: focus.",
+      "timestamp": "2026-09-12T14:26:20.316Z",
+      "xpGained": 100,
+      "goldChange": 500
+    },
+    {
+      "id": "act_unlock_1789223180288",
+      "userId": "usr_1789223179940_jwy0m",
+      "type": "class_unlocked",
+      "title": "Champion Summoned: RONIN",
+      "detail": "Spent 600 Gold to awaken a new champion vocation.",
+      "timestamp": "2026-09-12T14:26:20.288Z",
+      "goldChange": -600
+    },
+    {
+      "id": "act_lvl_1789223180258",
+      "userId": "usr_1789223179940_jwy0m",
+      "type": "level_up",
+      "title": "Ascended to Level 2!",
+      "detail": "Attributes boosted across all disciplines.",
+      "timestamp": "2026-09-12T14:26:20.258Z"
+    },
+    {
+      "id": "act_1789223180257",
+      "userId": "usr_1789223179940_jwy0m",
+      "type": "quest_completed",
+      "title": "Quest Vanquished: User A's Secret Quest",
+      "detail": "+300 XP, +500 Gold. Attribute increased: strength.",
+      "timestamp": "2026-09-12T14:26:20.257Z",
+      "xpGained": 300,
+      "goldChange": 500
+    },
+    {
+      "id": "act_lvl_1789223134841",
+      "userId": "usr_1789223134467_jbyv2",
+      "type": "level_up",
+      "title": "Ascended to Level 3!",
+      "detail": "Attributes boosted across all disciplines.",
+      "timestamp": "2026-09-12T14:25:34.841Z"
+    },
+    {
+      "id": "act_1789223134838",
+      "userId": "usr_1789223134467_jbyv2",
+      "type": "quest_completed",
+      "title": "Quest Vanquished: User A's Blacksmith Quest",
+      "detail": "+100 XP, +500 Gold. Attribute increased: focus.",
+      "timestamp": "2026-09-12T14:25:34.838Z",
+      "xpGained": 100,
+      "goldChange": 500
+    },
+    {
+      "id": "act_unlock_1789223134804",
+      "userId": "usr_1789223134467_jbyv2",
+      "type": "class_unlocked",
+      "title": "Champion Summoned: RONIN",
+      "detail": "Spent 600 Gold to awaken a new champion vocation.",
+      "timestamp": "2026-09-12T14:25:34.804Z",
+      "goldChange": -600
+    },
+    {
+      "id": "act_lvl_1789223134772",
+      "userId": "usr_1789223134467_jbyv2",
+      "type": "level_up",
+      "title": "Ascended to Level 2!",
+      "detail": "Attributes boosted across all disciplines.",
+      "timestamp": "2026-09-12T14:25:34.772Z"
+    },
+    {
+      "id": "act_1789223134770",
+      "userId": "usr_1789223134467_jbyv2",
+      "type": "quest_completed",
+      "title": "Quest Vanquished: User A's Secret Quest",
+      "detail": "+300 XP, +500 Gold. Attribute increased: strength.",
+      "timestamp": "2026-09-12T14:25:34.771Z",
+      "xpGained": 300,
+      "goldChange": 500
+    },
+    {
+      "id": "act_lvl_1789223124513",
+      "userId": "usr_1789223124110_npgj5",
+      "type": "level_up",
+      "title": "Ascended to Level 3!",
+      "detail": "Attributes boosted across all disciplines.",
+      "timestamp": "2026-09-12T14:25:24.513Z"
+    },
+    {
+      "id": "act_1789223124512",
+      "userId": "usr_1789223124110_npgj5",
+      "type": "quest_completed",
+      "title": "Quest Vanquished: User A's Blacksmith Quest",
+      "detail": "+100 XP, +500 Gold. Attribute increased: focus.",
+      "timestamp": "2026-09-12T14:25:24.512Z",
+      "xpGained": 100,
+      "goldChange": 500
+    },
+    {
+      "id": "act_unlock_1789223124485",
+      "userId": "usr_1789223124110_npgj5",
+      "type": "class_unlocked",
+      "title": "Champion Summoned: RONIN",
+      "detail": "Spent 600 Gold to awaken a new champion vocation.",
+      "timestamp": "2026-09-12T14:25:24.485Z",
+      "goldChange": -600
+    },
+    {
+      "id": "act_lvl_1789223124457",
+      "userId": "usr_1789223124110_npgj5",
+      "type": "level_up",
+      "title": "Ascended to Level 2!",
+      "detail": "Attributes boosted across all disciplines.",
+      "timestamp": "2026-09-12T14:25:24.457Z"
+    },
+    {
+      "id": "act_1789223124454",
+      "userId": "usr_1789223124110_npgj5",
+      "type": "quest_completed",
+      "title": "Quest Vanquished: User A's Secret Quest",
+      "detail": "+300 XP, +500 Gold. Attribute increased: strength.",
+      "timestamp": "2026-09-12T14:25:24.454Z",
+      "xpGained": 300,
+      "goldChange": 500
+    },
+    {
+      "id": "act_unlock_1789223112265",
+      "userId": "usr_1789223111910_e9fzy",
+      "type": "class_unlocked",
+      "title": "Champion Summoned: RONIN",
+      "detail": "Spent 600 Gold to awaken a new champion vocation.",
+      "timestamp": "2026-09-12T14:25:12.265Z",
+      "goldChange": -600
+    },
+    {
+      "id": "act_lvl_1789223112237",
+      "userId": "usr_1789223111910_e9fzy",
+      "type": "level_up",
+      "title": "Ascended to Level 2!",
+      "detail": "Attributes boosted across all disciplines.",
+      "timestamp": "2026-09-12T14:25:12.237Z"
+    },
+    {
+      "id": "act_1789223112235",
+      "userId": "usr_1789223111910_e9fzy",
+      "type": "quest_completed",
+      "title": "Quest Vanquished: User A's Secret Quest",
+      "detail": "+300 XP, +500 Gold. Attribute increased: strength.",
+      "timestamp": "2026-09-12T14:25:12.235Z",
+      "xpGained": 300,
+      "goldChange": 500
+    },
+    {
+      "id": "act_1789222689479",
+      "userId": "usr_ashen_hero_01",
+      "type": "quest_completed",
+      "title": "Quest Vanquished: dfdf",
+      "detail": "+50 XP, +45 Gold. Attribute increased: strength.",
+      "timestamp": "2026-09-12T14:18:09.479Z",
+      "xpGained": 50,
+      "goldChange": 45
+    },
+    {
+      "id": "act_1789222681666",
+      "userId": "usr_ashen_hero_01",
+      "type": "quest_completed",
+      "title": "Quest Vanquished: dfdf",
+      "detail": "+50 XP, +45 Gold. Attribute increased: strength.",
+      "timestamp": "2026-09-12T14:18:01.666Z",
+      "xpGained": 50,
+      "goldChange": 45
+    },
+    {
+      "id": "act_item_1789222610437",
+      "userId": "usr_ashen_hero_01",
+      "type": "item_purchased",
+      "title": "Forged Artifact: Soul Lantern of Firelink",
+      "detail": "Spent 180 Gold to acquire Soul Lantern of Firelink.",
+      "timestamp": "2026-09-12T14:16:50.437Z",
+      "goldChange": -180
+    },
+    {
+      "id": "act_1789221758278",
+      "userId": "usr_ashen_hero_01",
+      "type": "quest_completed",
+      "title": "Quest Vanquished: Channel Unbroken Focus (Deep Work Sprint)",
+      "detail": "+120 XP, +90 Gold. Attribute increased: focus.",
+      "timestamp": "2026-09-12T14:02:38.278Z",
+      "xpGained": 120,
+      "goldChange": 90
+    },
+    {
+      "id": "act_1789221749658",
+      "userId": "usr_ashen_hero_01",
+      "type": "quest_completed",
+      "title": "Quest Vanquished: sleep",
+      "detail": "+50 XP, +45 Gold. Attribute increased: intelligence.",
+      "timestamp": "2026-09-12T14:02:29.658Z",
+      "xpGained": 50,
+      "goldChange": 45
+    },
+    {
+      "id": "act_unlock_1789221582390",
+      "userId": "usr_ashen_hero_01",
+      "type": "class_unlocked",
+      "title": "Champion Summoned: ROGUE",
+      "detail": "Spent 850 Gold to awaken a new champion vocation.",
+      "timestamp": "2026-09-12T13:59:42.390Z",
+      "goldChange": -850
+    },
+    {
+      "id": "act_unlock_1789221543166",
+      "userId": "usr_ashen_hero_01",
+      "type": "class_unlocked",
+      "title": "Champion Summoned: KNIGHT",
+      "detail": "Spent 350 Gold to awaken a new champion vocation.",
+      "timestamp": "2026-09-12T13:59:03.166Z",
+      "goldChange": -350
+    },
+    {
+      "id": "act_1789221485561",
+      "userId": "usr_ashen_hero_01",
+      "type": "quest_completed",
+      "title": "Quest Vanquished: Defeat the Iron Sloth (Gym & Strength Training)",
+      "detail": "+65 XP, +50 Gold. Attribute increased: strength.",
+      "timestamp": "2026-09-12T13:58:05.561Z",
+      "xpGained": 65,
+      "goldChange": 50
+    },
+    {
+      "id": "act_1789219700094",
+      "userId": "usr_ashen_hero_01",
+      "type": "quest_completed",
+      "title": "Quest Vanquished: Channel Unbroken Focus (Deep Work Sprint)",
+      "detail": "+120 XP, +90 Gold. Attribute increased: focus.",
+      "timestamp": "2026-09-12T13:28:20.094Z",
+      "xpGained": 120,
+      "goldChange": 90
+    }
+  ],
+  "meta": {
+    "version": 1,
+    "lastSaved": "2026-09-12T14:40:56.960Z"
+  }
+}
