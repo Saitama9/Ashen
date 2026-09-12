@@ -1,9 +1,9 @@
-import tailwindcss from '@tailwindcss/vite';
-import react from '@vitejs/plugin-react';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import { defineConfig } from 'vite';
-import { VitePWA } from 'vite-plugin-pwa';
+import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react";
+import path from "path";
+import { fileURLToPath } from "url";
+import { defineConfig } from "vite";
+import { VitePWA } from "vite-plugin-pwa";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -11,67 +11,80 @@ const __dirname = path.dirname(__filename);
 export default defineConfig(() => {
   return {
     root: __dirname,
-    publicDir: path.resolve(__dirname, 'public'),
+    publicDir: path.resolve(__dirname, "public"),
     build: {
-      outDir: path.resolve(__dirname, '../dist'),
+      outDir: path.resolve(__dirname, "../dist"),
       emptyOutDir: true,
     },
     plugins: [
       react(),
       tailwindcss(),
       VitePWA({
-        registerType: 'autoUpdate',
-        includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'icon.svg'],
+        registerType: "autoUpdate",
+        includeAssets: ["favicon.ico", "apple-touch-icon.png", "icon.svg"],
         manifest: {
-          id: '/',
-          name: 'Ashen Path',
-          short_name: 'AshenPath',
-          description: 'Retro dark fantasy habit and quest tracker with a 16-bit RPG design system.',
-          theme_color: '#080B0D',
-          background_color: '#080B0D',
-          display: 'standalone',
-          start_url: '/',
-          scope: '/',
+          id: "/",
+          name: "Ashen Path",
+          short_name: "AshenPath",
+          description:
+            "Retro dark fantasy habit and quest tracker with a 16-bit RPG design system.",
+          theme_color: "#080B0D",
+          background_color: "#080B0D",
+          display: "standalone",
+          start_url: "/",
+          scope: "/",
           icons: [
             {
-              src: '/pwa-192x192.png',
-              sizes: '192x192',
-              type: 'image/png',
-              purpose: 'any',
+              src: "/pwa-192x192.png",
+              sizes: "192x192",
+              type: "image/png",
+              purpose: "any",
             },
             {
-              src: '/pwa-512x512.png',
-              sizes: '512x512',
-              type: 'image/png',
-              purpose: 'any',
+              src: "/pwa-512x512.png",
+              sizes: "512x512",
+              type: "image/png",
+              purpose: "any",
             },
             {
-              src: '/pwa-maskable-512x512.png',
-              sizes: '512x512',
-              type: 'image/png',
-              purpose: 'maskable',
+              src: "/pwa-maskable-512x512.png",
+              sizes: "512x512",
+              type: "image/png",
+              purpose: "maskable",
             },
           ],
         },
         workbox: {
-          globPatterns: ['**/*.{js,css,html,ico,png,svg,woff,woff2}'],
+          globPatterns: ["**/*.{js,css,html,ico,png,svg,woff,woff2}"],
         },
         devOptions: {
           enabled: true,
-          type: 'module',
+          type: "module",
         },
       }),
     ],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        "@": path.resolve(__dirname, "."),
       },
     },
     server: {
-      hmr: process.env.DISABLE_HMR !== 'true',
-      watch: process.env.DISABLE_HMR === 'true' ? null : {
-        ignored: ['**/server/data/**', '**/data/**', '**/*.json', '**/*.tmp', '**/dist/**', '**/dev-dist/**', '**/node_modules/**'],
-      },
+      allowedHosts: ["ashen-0fjz.onrender.com"],
+      hmr: process.env.DISABLE_HMR !== "true",
+      watch:
+        process.env.DISABLE_HMR === "true"
+          ? null
+          : {
+              ignored: [
+                "**/server/data/**",
+                "**/data/**",
+                "**/*.json",
+                "**/*.tmp",
+                "**/dist/**",
+                "**/dev-dist/**",
+                "**/node_modules/**",
+              ],
+            },
     },
   };
 });
