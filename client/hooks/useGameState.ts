@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import {
   Quest,
   QuestCategory,
@@ -18,172 +18,27 @@ import { api } from '../services/api';
 
 const STORAGE_KEY = 'ashen_path_retro_state_v2';
 
-const INITIAL_QUESTS: Quest[] = [
-  {
-    id: 'quest-1',
-    title: 'Read for 30 minutes',
-    description: 'Read any book for at least 30 minutes. Knowledge lights the way.',
-    category: 'study',
-    xpReward: 50,
-    statType: 'intelligence',
-    statAmount: 10,
-    completed: true,
-    repeat: 'daily',
-    flavorQuote: '“A mind once kindled can never be extinguished.”',
-  },
-  {
-    id: 'quest-2',
-    title: 'Go to the Gym',
-    description: 'Forge the vessel. Physical trials temper the enduring spirit.',
-    category: 'fitness',
-    xpReward: 70,
-    statType: 'strength',
-    statAmount: 15,
-    completed: false,
-    repeat: 'daily',
-    flavorQuote: '“Steel is tested in the forge; the body in the strain.”',
-  },
-  {
-    id: 'quest-3',
-    title: 'Build a side project',
-    description: 'Lay stone upon stone. Bring forth something of lasting craft.',
-    category: 'work',
-    xpReward: 80,
-    statType: 'intelligence',
-    statAmount: 15,
-    completed: false,
-    repeat: 'daily',
-    flavorQuote: '“A cathedral rises from solitary bricks.”',
-  },
-  {
-    id: 'quest-4',
-    title: 'Morning Meditation',
-    description: 'Silence the turbulent mind before the trials of the waking sun.',
-    category: 'custom',
-    xpReward: 40,
-    statType: 'focus',
-    statAmount: 10,
-    completed: true,
-    repeat: 'daily',
-    flavorQuote: '“In stillness, find the unwavering center.”',
-  },
-  {
-    id: 'quest-5',
-    title: 'Drink 2L spring water',
-    description: 'Nourish the biological embers with cold pure water.',
-    category: 'health',
-    xpReward: 30,
-    statType: 'vitality',
-    statAmount: 10,
-    completed: true,
-    repeat: 'daily',
-    flavorQuote: '“Water sustains what fire would consume.”',
-  },
+const DEFAULT_STATS: CharacterStats = {
+  strength: 0,
+  intelligence: 0,
+  vitality: 0,
+  focus: 0,
+};
+
+const DEFAULT_STREAK: DayStreak[] = [
+  { day: 'Mon', completed: false },
+  { day: 'Tue', completed: false },
+  { day: 'Wed', completed: false },
+  { day: 'Thu', completed: false },
+  { day: 'Fri', completed: false },
+  { day: 'Sat', completed: false },
+  { day: 'Sun', completed: false },
 ];
 
-const INITIAL_INVENTORY: InventoryItem[] = [
-  {
-    id: 'item-1',
-    name: "Traveler's Cloak",
-    type: 'armor',
-    description: 'Weathered hooded mantle woven from coarse thread. Protects against biting mountain winds.',
-    price: 0,
-    equipped: true,
-    owned: true,
-    statBonus: { stat: 'vitality', amount: 2 },
-    iconType: 'cloak',
-  },
-  {
-    id: 'item-2',
-    name: 'Iron Resolve',
-    type: 'armor',
-    description: 'Heavy plate forged in the northern kilns. Hardens the wearer against distraction.',
-    price: 200,
-    equipped: false,
-    owned: false,
-    statBonus: { stat: 'strength', amount: 4 },
-    iconType: 'armor',
-  },
-  {
-    id: 'item-3',
-    name: "Scholar's Tome",
-    type: 'tome',
-    description: 'An illuminated codex containing lost axioms of the ancient archives.',
-    price: 300,
-    equipped: false,
-    owned: false,
-    statBonus: { stat: 'intelligence', amount: 5 },
-    iconType: 'tome',
-  },
-  {
-    id: 'item-4',
-    name: 'Ember Lantern',
-    type: 'relic',
-    description: 'A cage of blackened brass bearing an undying cinder. Banishes shadows.',
-    price: 500,
-    equipped: false,
-    owned: false,
-    statBonus: { stat: 'focus', amount: 6 },
-    iconType: 'lantern',
-  },
-  {
-    id: 'item-5',
-    name: 'Ashen Greatsword',
-    type: 'weapon',
-    description: 'Heavily chipped blade steeped in the residue of countless bonfires.',
-    price: 800,
-    equipped: false,
-    owned: false,
-    statBonus: { stat: 'strength', amount: 8 },
-    iconType: 'sword',
-  },
-  {
-    id: 'item-6',
-    name: 'Ring of Focus',
-    type: 'badge',
-    description: 'Engraved gold band that anchors erratic thoughts into deep discipline.',
-    price: 400,
-    equipped: false,
-    owned: false,
-    statBonus: { stat: 'focus', amount: 5 },
-    iconType: 'ring',
-  },
-  {
-    id: 'item-7',
-    name: 'Ancient Reliquary',
-    type: 'relic',
-    description: 'Sealed by ancient rite. Unlocks at Level 20.',
-    price: 1500,
-    equipped: false,
-    owned: false,
-    iconType: 'locked',
-  },
-  {
-    id: 'item-8',
-    name: 'Sunlight Talisman',
-    type: 'badge',
-    description: 'Sealed by ancient rite. Unlocks at Level 25.',
-    price: 2000,
-    equipped: false,
-    owned: false,
-    iconType: 'locked',
-  },
-];
-
-const INITIAL_STREAK: DayStreak[] = [
-  { day: 'Mon', completed: true },
-  { day: 'Tue', completed: true },
-  { day: 'Wed', completed: true },
-  { day: 'Thu', completed: true },
-  { day: 'Fri', completed: true },
-  { day: 'Sat', completed: true },
-  { day: 'Sun', completed: true },
-];
-
-const INITIAL_BOSS: DailyBoss = {
+const DEFAULT_BOSS: DailyBoss = {
   name: 'Corrupted Behemoth',
   title: 'Scourge of the Ashen Waste',
-  currentHp: 220,
+  currentHp: 400,
   maxHp: 400,
   defeated: false,
 };
@@ -192,25 +47,21 @@ export function useGameState() {
   const [playerClass, setPlayerClassState] = useState<PlayerClass>('sorcerer');
   const [unlockedClasses, setUnlockedClasses] = useState<PlayerClass[]>(['sorcerer']);
   const [heroAction, setHeroAction] = useState<SpriteAction>('idle');
-  const [level, setLevel] = useState<number>(12);
-  const [xp, setXp] = useState<number>(320);
-  const [maxXp, setMaxXp] = useState<number>(500);
-  const [gold, setGold] = useState<number>(1240);
-  const [stats, setStats] = useState<CharacterStats>({
-    strength: 10,
-    intelligence: 18,
-    vitality: 12,
-    focus: 15,
-  });
-  const [quests, setQuests] = useState<Quest[]>(INITIAL_QUESTS);
-  const [inventory, setInventory] = useState<InventoryItem[]>(INITIAL_INVENTORY);
-  const [streak, setStreak] = useState<DayStreak[]>(INITIAL_STREAK);
-  const [streakDays, setStreakDays] = useState<number>(7);
+  const [level, setLevel] = useState<number>(1);
+  const [xp, setXp] = useState<number>(0);
+  const [maxXp, setMaxXp] = useState<number>(100);
+  const [gold, setGold] = useState<number>(0);
+  const [stats, setStats] = useState<CharacterStats>(DEFAULT_STATS);
+  const [quests, setQuests] = useState<Quest[]>([]);
+  const [inventory, setInventory] = useState<InventoryItem[]>([]);
+  const [streak, setStreak] = useState<DayStreak[]>(DEFAULT_STREAK);
+  const [streakDays, setStreakDays] = useState<number>(0);
   const [soundEnabled, setSoundEnabled] = useState<boolean>(true);
   const [crtScanlines, setCrtScanlines] = useState<boolean>(true);
-  const [dailyBoss, setDailyBoss] = useState<DailyBoss>(INITIAL_BOSS);
+  const [dailyBoss, setDailyBoss] = useState<DailyBoss>(DEFAULT_BOSS);
   const [currentUser, setCurrentUser] = useState<UserProfile | null>(null);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState<boolean>(false);
+  const [authModalMode, setAuthModalMode] = useState<'login' | 'register'>('login');
 
   // Level Up Modal State
   const [levelUpData, setLevelUpData] = useState<{
@@ -228,6 +79,7 @@ export function useGameState() {
       description: q.description || '',
       category: (q.category as QuestCategory) || 'custom',
       xpReward: Number(q.xpReward) || 50,
+      goldReward: Number(q.goldReward) || Math.floor((Number(q.xpReward) || 50) * 0.8),
       statType: stat,
       statAmount: Number(q.statAmount) || 10,
       completed: Boolean(q.completed),
@@ -269,10 +121,12 @@ export function useGameState() {
     if (char.unlockedClasses && Array.isArray(char.unlockedClasses)) {
       setUnlockedClasses(char.unlockedClasses);
     }
+    if (char.streakDays !== undefined) setStreakDays(char.streakDays);
   };
 
   // Initial load: Try local cache first for instant tactile render, then sync with backend
   useEffect(() => {
+    // Load cached local state for instant render
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
@@ -300,20 +154,15 @@ export function useGameState() {
       }
     } catch {}
 
-    // Initialize with backend database
+    // Sync with backend only if we have a token (authenticated user)
     const syncBackend = async () => {
-      try {
-        let authRes;
-        if (api.getToken()) {
-          try {
-            authRes = await api.getMe();
-          } catch {
-            authRes = await api.demoLogin();
-          }
-        } else {
-          authRes = await api.demoLogin();
-        }
+      if (!api.hasToken()) {
+        // No token — user needs to log in. Stay in unauthenticated state.
+        return;
+      }
 
+      try {
+        const authRes = await api.getMe();
         if (authRes && authRes.user) {
           setCurrentUser(authRes.user);
           applyCharacterData(authRes.character);
@@ -322,7 +171,7 @@ export function useGameState() {
         // Fetch Quests
         try {
           const qRes = await api.getQuests();
-          if (qRes && qRes.quests && qRes.quests.length > 0) {
+          if (qRes && Array.isArray(qRes.quests)) {
             setQuests(qRes.quests.map(normalizeQuest));
           }
         } catch {}
@@ -330,12 +179,15 @@ export function useGameState() {
         // Fetch Inventory
         try {
           const invRes = await api.getInventory();
-          if (invRes && invRes.items && invRes.items.length > 0) {
+          if (invRes && Array.isArray(invRes.items)) {
             setInventory(invRes.items.map(normalizeInventoryItem));
           }
         } catch {}
       } catch (err) {
-        console.warn('Backend synchronization warning (using local fallback):', err);
+        // Token expired or invalid — clear it so user needs to re-authenticate
+        console.warn('Backend sync failed (token may be invalid):', err);
+        api.clearToken();
+        setCurrentUser(null);
       }
     };
 
@@ -636,17 +488,27 @@ export function useGameState() {
     setCurrentUser(user);
     if (character) {
       applyCharacterData(character);
+      saveState({
+        level: character.level,
+        xp: character.xp,
+        maxXp: character.maxXp,
+        gold: character.gold,
+        stats: character.stats,
+        playerClass: character.playerClass,
+        unlockedClasses: character.unlockedClasses,
+        streakDays: character.streakDays,
+      });
     }
     // Reload quests and inventory for the authenticated user
     api.getQuests().then((qRes) => {
-      if (qRes && qRes.quests) {
+      if (qRes && Array.isArray(qRes.quests)) {
         const loadedQuests = qRes.quests.map(normalizeQuest);
         setQuests(loadedQuests);
         saveState({ quests: loadedQuests });
       }
     }).catch(() => {});
     api.getInventory().then((iRes) => {
-      if (iRes && iRes.items) {
+      if (iRes && Array.isArray(iRes.items)) {
         const loadedInv = iRes.items.map(normalizeInventoryItem);
         setInventory(loadedInv);
         saveState({ inventory: loadedInv });
@@ -655,21 +517,38 @@ export function useGameState() {
   };
 
   const logout = () => {
+    // Clear auth token
     api.clearToken();
+
+    // Clear local storage
     try {
       localStorage.removeItem(STORAGE_KEY);
+      sessionStorage.removeItem('ashen_current_screen');
     } catch {}
-    api.demoLogin().then((res) => {
-      setCurrentUser(res.user);
-      applyCharacterData(res.character);
-      api.getQuests().then((qRes) => {
-        if (qRes && qRes.quests) setQuests(qRes.quests.map(normalizeQuest));
-      }).catch(() => {});
-      api.getInventory().then((iRes) => {
-        if (iRes && iRes.items) setInventory(iRes.items.map(normalizeInventoryItem));
-      }).catch(() => {});
-    }).catch(() => {});
+
+    // Reset all state to defaults
+    setCurrentUser(null);
+    setPlayerClassState('sorcerer');
+    setUnlockedClasses(['sorcerer']);
+    setHeroAction('idle');
+    setLevel(1);
+    setXp(0);
+    setMaxXp(100);
+    setGold(0);
+    setStats(DEFAULT_STATS);
+    setQuests([]);
+    setInventory([]);
+    setStreak(DEFAULT_STREAK);
+    setStreakDays(0);
+    setDailyBoss(DEFAULT_BOSS);
+    setLevelUpData(null);
   };
+
+  // Open auth modal with specific mode
+  const openAuthModal = useCallback((mode: 'login' | 'register') => {
+    setAuthModalMode(mode);
+    setIsAuthModalOpen(true);
+  }, []);
 
   return {
     playerClass,
@@ -695,6 +574,8 @@ export function useGameState() {
     currentUser,
     isAuthModalOpen,
     setIsAuthModalOpen,
+    authModalMode,
+    openAuthModal,
     handleAuthSuccess,
     logout,
     toggleSound,

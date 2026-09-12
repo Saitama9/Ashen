@@ -79,6 +79,14 @@
       "passwordHash": "$2b$10$I7Bs.8zF/s5H3CWB5dYOdeVALxijlFAaeJQHUFRqTFGw6b6zaTfN.",
       "createdAt": "2026-09-12T14:26:20.207Z",
       "updatedAt": "2026-09-12T14:26:20.207Z"
+    },
+    {
+      "id": "usr_1789237484573_cc4c9",
+      "email": "knight1@test.realm",
+      "username": "KnightSoul_1",
+      "passwordHash": "$2b$10$opl6lGwV6Mxot./MWfUlI.rqqyxryz4HpaFHEYhDRQflln7GTOCde",
+      "createdAt": "2026-09-12T18:24:44.573Z",
+      "updatedAt": "2026-09-12T18:24:44.573Z"
     }
   ],
   "characters": [
@@ -337,6 +345,33 @@
       },
       "unlockedClasses": [
         "rogue"
+      ],
+      "ownedItemIds": [
+        "item-1"
+      ],
+      "equippedItemIds": [
+        "item-1"
+      ],
+      "kindleLevel": 1
+    },
+    {
+      "userId": "usr_1789237484573_cc4c9",
+      "playerClass": "knight",
+      "level": 2,
+      "xp": 85,
+      "maxXp": 267,
+      "gold": 290,
+      "streakDays": 1,
+      "lastActiveDate": "2026-09-12",
+      "stats": {
+        "strength": 17,
+        "intelligence": 10,
+        "vitality": 16,
+        "focus": 11
+      },
+      "unlockedClasses": [
+        "knight",
+        "sorcerer"
       ],
       "ownedItemIds": [
         "item-1"
@@ -1357,6 +1392,102 @@
       ],
       "createdAt": "2026-09-12T14:26:20.211Z",
       "updatedAt": "2026-09-12T14:26:20.211Z"
+    },
+    {
+      "id": "quest-gym",
+      "userId": "usr_1789237484573_cc4c9",
+      "title": "Defeat the Iron Sloth (Gym & Strength Training)",
+      "description": "Conquer the weights and forge bodily fortitude for 45 minutes.",
+      "category": "fitness",
+      "difficulty": "medium",
+      "xpReward": 65,
+      "goldReward": 50,
+      "attributeTarget": "strength",
+      "statType": "strength",
+      "statAmount": 15,
+      "repeat": "daily",
+      "completed": true,
+      "streak": 4,
+      "tags": [
+        "fitness",
+        "strength",
+        "health"
+      ],
+      "createdAt": "2026-09-12T18:24:44.596Z",
+      "updatedAt": "2026-09-12T18:25:05.506Z",
+      "completedAt": "2026-09-12T18:25:05.505Z"
+    },
+    {
+      "id": "quest-reading",
+      "userId": "usr_1789237484573_cc4c9",
+      "title": "Study the Ancient Tomes (Read 25 Pages)",
+      "description": "Absorb profound thoughts from literature or technical lore.",
+      "category": "study",
+      "difficulty": "easy",
+      "xpReward": 40,
+      "goldReward": 30,
+      "attributeTarget": "intelligence",
+      "statType": "intelligence",
+      "statAmount": 10,
+      "repeat": "daily",
+      "completed": true,
+      "completedAt": "2026-09-12T18:24:44.596Z",
+      "streak": 5,
+      "tags": [
+        "study",
+        "mind",
+        "reading"
+      ],
+      "createdAt": "2026-09-12T18:24:44.597Z",
+      "updatedAt": "2026-09-12T18:24:44.597Z"
+    },
+    {
+      "id": "quest-deepwork",
+      "userId": "usr_1789237484573_cc4c9",
+      "title": "Channel Unbroken Focus (Deep Work Sprint)",
+      "description": "Complete 90 minutes of high-intensity focus without distractions.",
+      "category": "work",
+      "difficulty": "hard",
+      "xpReward": 120,
+      "goldReward": 90,
+      "attributeTarget": "focus",
+      "statType": "focus",
+      "statAmount": 20,
+      "repeat": "daily",
+      "completed": true,
+      "streak": 3,
+      "tags": [
+        "career",
+        "focus",
+        "deepwork"
+      ],
+      "createdAt": "2026-09-12T18:24:44.597Z",
+      "updatedAt": "2026-09-12T18:52:27.025Z",
+      "completedAt": "2026-09-12T18:52:27.025Z"
+    },
+    {
+      "id": "quest-hydration",
+      "userId": "usr_1789237484573_cc4c9",
+      "title": "Drink from the Fountain of Life (2.5L Water)",
+      "description": "Nourish the biological vessel with crisp hydration.",
+      "category": "health",
+      "difficulty": "trivial",
+      "xpReward": 20,
+      "goldReward": 15,
+      "attributeTarget": "vitality",
+      "statType": "vitality",
+      "statAmount": 8,
+      "repeat": "daily",
+      "completed": true,
+      "completedAt": "2026-09-12T18:24:44.597Z",
+      "streak": 7,
+      "tags": [
+        "health",
+        "vitality",
+        "wellness"
+      ],
+      "createdAt": "2026-09-12T18:24:44.597Z",
+      "updatedAt": "2026-09-12T18:24:44.597Z"
     }
   ],
   "inventoryItems": [
@@ -1540,6 +1671,43 @@
     }
   ],
   "activityLogs": [
+    {
+      "id": "act_unlock_1789239170613",
+      "userId": "usr_1789237484573_cc4c9",
+      "type": "class_unlocked",
+      "title": "Champion Summoned: SORCERER",
+      "detail": "Spent 0 Gold to awaken a new champion vocation.",
+      "timestamp": "2026-09-12T18:52:50.613Z",
+      "goldChange": 0
+    },
+    {
+      "id": "act_lvl_1789239147047",
+      "userId": "usr_1789237484573_cc4c9",
+      "type": "level_up",
+      "title": "Ascended to Level 2!",
+      "detail": "Attributes boosted across all disciplines.",
+      "timestamp": "2026-09-12T18:52:27.047Z"
+    },
+    {
+      "id": "act_1789239147036",
+      "userId": "usr_1789237484573_cc4c9",
+      "type": "quest_completed",
+      "title": "Quest Vanquished: Channel Unbroken Focus (Deep Work Sprint)",
+      "detail": "+120 XP, +90 Gold. Attribute increased: focus.",
+      "timestamp": "2026-09-12T18:52:27.036Z",
+      "xpGained": 120,
+      "goldChange": 90
+    },
+    {
+      "id": "act_1789237505510",
+      "userId": "usr_1789237484573_cc4c9",
+      "type": "quest_completed",
+      "title": "Quest Vanquished: Defeat the Iron Sloth (Gym & Strength Training)",
+      "detail": "+65 XP, +50 Gold. Attribute increased: strength.",
+      "timestamp": "2026-09-12T18:25:05.510Z",
+      "xpGained": 65,
+      "goldChange": 50
+    },
     {
       "id": "act_item_1789223180337",
       "userId": "usr_1789223179940_jwy0m",
@@ -1801,6 +1969,6 @@
   ],
   "meta": {
     "version": 1,
-    "lastSaved": "2026-09-12T14:40:56.960Z"
+    "lastSaved": "2026-09-12T18:55:23.577Z"
   }
 }

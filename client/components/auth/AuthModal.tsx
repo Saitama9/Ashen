@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { api } from '../../services/api';
 import { soundFx } from '../../utils/audio';
 import { RPGCard } from '../primitives/RPGCard';
@@ -10,10 +10,11 @@ interface AuthModalProps {
   isOpen: boolean;
   onClose: () => void;
   onAuthSuccess: (user: { id: string; email: string; username: string }, character: any) => void;
+  initialMode?: 'login' | 'register';
 }
 
-export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onAuthSuccess }) => {
-  const [mode, setMode] = useState<'login' | 'register'>('login');
+export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onAuthSuccess, initialMode = 'login' }) => {
+  const [mode, setMode] = useState<'login' | 'register'>(initialMode);
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -21,6 +22,18 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onAuthSuc
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [successMsg, setSuccessMsg] = useState<string | null>(null);
+
+  // Sync mode with initialMode prop when modal opens
+  useEffect(() => {
+    if (isOpen) {
+      setMode(initialMode);
+      setError(null);
+      setSuccessMsg(null);
+      setEmail('');
+      setUsername('');
+      setPassword('');
+    }
+  }, [isOpen, initialMode]);
 
   if (!isOpen) return null;
 
@@ -59,21 +72,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onAuthSuc
     } catch (err: any) {
       soundFx.playClick();
       setError(err.message || 'Authentication failed');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleDemoLogin = async () => {
-    setError(null);
-    setLoading(true);
-    try {
-      const res = await api.demoLogin();
-      soundFx.playQuestComplete();
-      onAuthSuccess(res.user, res.character);
-      onClose();
-    } catch (err: any) {
-      setError(err.message || 'Demo login failed');
     } finally {
       setLoading(false);
     }
@@ -245,22 +243,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onAuthSuc
             </PixelButton>
           </div>
         </form>
-
-        {/* Demo Fast Login Option */}
-        <div className="pt-2 border-t border-[#59452A]/50 text-center space-y-2">
-          <p className="font-body text-[11px] text-[#A99D83]">
-            Or explore immediately with the default Level 4 champion:
-          </p>
-          <button
-            type="button"
-            onClick={handleDemoLogin}
-            disabled={loading}
-            className="w-full py-2 px-3 bg-[#13191D] hover:bg-[#1C252B] border border-[#59452A] rounded-xs font-display text-xs text-[#E7D8B5] flex items-center justify-center gap-2 transition-colors cursor-pointer"
-          >
-            <Sparkles className="w-3.5 h-3.5 text-[#F0C75E]" />
-            <span>Load Demo Champion (AshenOne • 1,304 G)</span>
-          </button>
-        </div>
       </RPGCard>
     </div>
   );

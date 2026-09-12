@@ -22,12 +22,18 @@ import { ScanlineOverlay } from './components/primitives/ScanlineOverlay';
 import { SmoothScrollProvider } from './components/providers/SmoothScrollProvider';
 import { ErrorBoundary } from './components/common/ErrorBoundary';
 import { animateScreenEnter } from './utils/animations';
+import { api } from './services/api';
 
 export default function App() {
   const [currentScreen, setCurrentScreen] = useState<ScreenId>(() => {
     if (typeof window !== 'undefined') {
+      if (!api.hasToken()) {
+        sessionStorage.removeItem('ashen_current_screen');
+        return 'splash';
+      }
       const saved = sessionStorage.getItem('ashen_current_screen') as ScreenId | null;
       if (saved && saved !== 'splash') return saved;
+      return 'home';
     }
     return 'splash';
   });
@@ -58,6 +64,8 @@ export default function App() {
     currentUser,
     isAuthModalOpen,
     setIsAuthModalOpen,
+    authModalMode,
+    openAuthModal,
     handleAuthSuccess,
     logout,
     toggleSound,
@@ -84,6 +92,26 @@ export default function App() {
     setSelectedQuest(quest);
     handleSelectScreen('quest-detail');
   };
+
+  // Handle auth success from splash: navigate to home
+  const handleAuthSuccessAndNavigate = (user: any, character: any) => {
+    handleAuthSuccess(user, character);
+    handleSelectScreen('home');
+  };
+
+  // Handle logout: clear state and navigate to splash
+  const handleLogout = () => {
+    logout();
+    handleSelectScreen('splash');
+  };
+
+  // Guard: unauthenticated users must remain on splash
+  useEffect(() => {
+    if (!api.hasToken() && currentScreen !== 'splash') {
+      setCurrentScreen('splash');
+      sessionStorage.removeItem('ashen_current_screen');
+    }
+  }, [currentScreen]);
 
   // GSAP screen entrance on screen change
   useEffect(() => {
@@ -115,9 +143,9 @@ export default function App() {
             crtScanlines={crtScanlines}
             onToggleScanlines={toggleScanlines}
             currentUser={currentUser}
-            onOpenAuth={() => setIsAuthModalOpen(true)}
-            onLogout={logout}
-            onResetToSplash={() => setCurrentScreen('splash')}
+            onOpenAuth={() => openAuthModal('login')}
+            onLogout={handleLogout}
+            onResetToSplash={() => handleSelectScreen('splash')}
           />
         )}
 
@@ -131,12 +159,7 @@ export default function App() {
           <ErrorBoundary>
             {currentScreen === 'splash' && (
               <SplashScreen
-                onEnter={() => setCurrentScreen('home')}
-                playerClass={playerClass}
-                onSelectClass={setPlayerClass}
-                level={level}
-                streak={streakDays}
-                onOpenAuth={() => setIsAuthModalOpen(true)}
+                onOpenAuthWithMode={openAuthModal}
               />
             )}
 
@@ -213,7 +236,7 @@ export default function App() {
                 onToggleSound={toggleSound}
                 crtScanlines={crtScanlines}
                 onToggleScanlines={toggleScanlines}
-                onResetToSplash={() => setCurrentScreen('splash')}
+                onResetToSplash={() => handleSelectScreen('splash')}
                 level={level}
                 xp={xp}
                 maxXp={maxXp}
@@ -227,8 +250,8 @@ export default function App() {
                 unlockedClasses={unlockedClasses}
                 equippedItems={equippedItems}
                 currentUser={currentUser}
-                onOpenAuthModal={() => setIsAuthModalOpen(true)}
-                onLogout={logout}
+                onOpenAuthModal={() => openAuthModal('login')}
+                onLogout={handleLogout}
                 onNavigate={handleSelectScreen}
               />
             )}
@@ -250,7 +273,8 @@ export default function App() {
         <AuthModal
           isOpen={isAuthModalOpen}
           onClose={() => setIsAuthModalOpen(false)}
-          onAuthSuccess={handleAuthSuccess}
+          onAuthSuccess={handleAuthSuccessAndNavigate}
+          initialMode={authModalMode}
         />
 
         {/* PWA / Network Status Indicator */}

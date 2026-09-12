@@ -16,7 +16,7 @@ export const IrlQuestBackground: React.FC<IrlQuestBackgroundProps> = ({
         src="/ashen-bonfire-bg.svg"
         alt="Dark Souls Bonfire Knight & Eclipse Background"
         referrerPolicy="no-referrer"
-        className="w-full h-full object-cover object-center pixel-art"
+        className="w-full h-full object-cover object-bottom pixel-art"
       />
 
       {/* Atmospheric Ember Particle Layer */}
