@@ -25,7 +25,7 @@
 
 ---
 
-## 🏛️ Architecture & Folder Structure
+## 🏛️ Architecture & Folder Structure <3
 
 The codebase is engineered with strict modular encapsulation between the frontend single-page application (`client/`) and the backend REST API (`server/`):
 
